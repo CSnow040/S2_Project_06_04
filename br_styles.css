@@ -13,10 +13,15 @@
 
 */
 
+/* The HTML styles gives a background color behind the body which has its 
+own background image */
 html {
     background-color: rgb(129, 85, 55)
 }
 
+/* The body header image styles here are used to give the images a maximum width also 
+while centering them to the webpage with a display of block to give each 
+image some space */
 body header img {
     display: block;
     background-image: url(br_paper.png);
@@ -25,6 +30,9 @@ body header img {
     margin-right: auto;
 }
 
+/* The horizontal class that specifies with the top navigational bar is given the 
+needed styles to make it a horizontal bar to stick to the very top of 
+the web page */
 .horizontal {
     background-color: #333;
     overflow: hidden;
@@ -44,6 +52,22 @@ body header img {
     color: black;
 }
 
+/* This is used to give the extra links a border and background with a couple 
+other styles alongside them */
+nav.extra {
+    float: right;
+    margin-right: 325px;
+    margin-top: 100px;
+    background-color: rgb(55, 55, 197);
+    padding: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black, 50 repeat;
+    width: 15%;
+}
+
+/* The body article simply adds teh background image provided, center the body with the 
+web page itself, and give the body a maximum width that it cannot cross */
 body article {
     background-image: url(br_paper.png);
     width: 74.8%;
@@ -51,28 +75,38 @@ body article {
     margin-right: auto;
 }
 
-body article#intro h1 {
+/* The body article h1 selector with the class of intro is used to make the h1 at the 
+top of the page has emphasis and is centered to the body */
+body article.intro h1 {
     text-align: center;
     font-size: 1.5em;
     padding: 15px;
 }
 
+/* This style is used to give the h2's that title the images the background of the body 
+to flow smoothly */
 h2 {
     background: url(br_paper.png);
     text-align: center;
 }
 
+/* The body article paragraph selector is used to give the paragraph for the introduction some 
+spacing from the outside margins */
 body article p {
     padding-bottom: 10px;
 }
 
-body article#intro p {
+/* The body article selectors with the class of intro and a paragraph selector are used to design
+ the introduction to the property */
+body article.intro p {
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-body article#info p {
+/* The body article selectors with a class of info and a paragraph selector are used to add styles 
+to the information provided to the used of the web page to give the website further personality */
+body article.info p {
     float: left;
     background-color: rgb(55, 55, 197);
     padding: 10px;
@@ -83,12 +117,17 @@ body article#info p {
     width: 15%;
 }
 
+/* The row class selector ion this style is used to give a basic area
+of where the whole div will take up adding in some styles such as 
+margin to provide boundaries and a background to flow with the body */
 .row {
     background: url(br_paper.png);
     margin-left: 240px;
     margin-right: 240px;
 }
 
+/* The midcolumn class selector is used to organize all photos with 
+the midcolumn class in the HTML to center it on the page */
 .midcolumn {
     display: block;
     overflow: hidden;
@@ -98,6 +137,8 @@ body article#info p {
     padding: 5px;
 }
 
+/* The leftcolum class selector does the same thing however its for
+the left side images*/
 .leftcolumn {
     width: 25%;
     margin-left: auto; 
@@ -105,20 +146,26 @@ body article#info p {
     padding: 5px;
 }
 
+/* The rightcolumn class selector does the same as the left and mid class 
+selectors but its for the images placed on the right */
 .rightcolumn {
     width: 25%;
     margin-left: auto;
     margin-right: auto;
-    /* margin-bottom: 1100px; */
     padding: 5px;
 }
-  
+
+/* The row class with the after attribgute added to it is used to prevent 
+container collapse of the images into the footer or in an unwanted 
+location on the web page */
 .row::after {
     content: "";
     clear: both;
     display: block;
 }
 
+/* This is used for the footer styles to make the size of the footer 
+equivalent to the page body */
 footer {
     background-color: rgb(0, 0, 0);
     text-align: center;
