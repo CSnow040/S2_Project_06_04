@@ -117,6 +117,10 @@ body article.info p {
     width: 15%;
 }
 
+body {
+    box-shadow: black 10px 0px 10px;
+}
+
 /* The row class selector ion this style is used to give a basic area
 of where the whole div will take up adding in some styles such as 
 margin to provide boundaries and a background to flow with the body */
